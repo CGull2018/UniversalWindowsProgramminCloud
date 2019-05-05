@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="InventoryMobileBank.Module04Lab"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InventoryMobileBank"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF3F77B9" Offset="1"/>
+                <GradientStop Color="#FF2C5381" Offset="0.461"/>
+                <GradientStop Color="#FF2F598A" Offset="0.752"/>
+                <GradientStop Color="#FF0D1927" Offset="0.217"/>
+            </LinearGradientBrush>
+        </Grid.BorderBrush>
+        <TextBlock HorizontalAlignment="Left" Margin="25,20,0,0" Text="Banking Inventory" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="300"/>
+        <HyperlinkButton x:ConnectionId='2' Content="Main Page" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,75,0,0"                                />
+        <Button x:ConnectionId='3' x:Name="btnGetGPS2" Content="Get GPS Info" HorizontalAlignment="Left" Margin="52,198,0,0" VerticalAlignment="Top"                              />
+
+        <TextBlock x:ConnectionId='4' x:Name="StatusTextBlock" HorizontalAlignment="Left" Margin="52,339,0,0" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top" Height="216" Width="298"/>
+
+        <TextBlock x:ConnectionId='5' x:Name="LatitudeTextBlock" HorizontalAlignment="Left" Margin="52,250,0,0" TextWrapping="Wrap" Text="Latitude:" VerticalAlignment="Top" Width="240"/>
+
+        <TextBlock x:ConnectionId='6' x:Name="LongitudeTextBlock" HorizontalAlignment="Left" Margin="52,275,0,0" TextWrapping="Wrap" Text="Longitude:" VerticalAlignment="Top" Width="240"/>
+    </Grid>
+</Page>
+

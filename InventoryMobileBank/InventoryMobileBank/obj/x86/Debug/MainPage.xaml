@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="InventoryMobileBank.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InventoryMobileBank"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderThickness="15,15,15,16" Background="#FFE6EAEA">
+        <Grid.BorderBrush>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF3F77B9" Offset="1"/>
+                <GradientStop Color="#FF2C5381" Offset="0.461"/>
+                <GradientStop Color="#FF2F598A" Offset="0.752"/>
+                <GradientStop Color="#FF0D1927" Offset="0.217"/>
+            </LinearGradientBrush>
+        </Grid.BorderBrush>
+        <TextBlock HorizontalAlignment="Left" Margin="25,20,0,0" Text="Banking Inventory" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Width="300"/>
+        <HyperlinkButton x:ConnectionId='2' Content="User Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,75,0,0"                                />
+        <TextBlock HorizontalAlignment="Left" Margin="150,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="250" Width="200"  Text="INSTRUCTIONS: For using this Bill Inventory application a user login must first be created. Then bills can be added to the inventory database by creating a new bill object. To &quot;pay&quot; the bill, refresh the list and place a check in the check box. This will take the bill from the list and subtract the total from your current account." FocusVisualPrimaryBrush="#FFFDFCFC"/>
+        <HyperlinkButton x:ConnectionId='3' Content="Module 02 Lab" HorizontalAlignment="Left" Margin="25,100,0,0" VerticalAlignment="Top"                              />
+        <HyperlinkButton x:ConnectionId='4' Content="Module 04 Lab" HorizontalAlignment="Left" Margin="25,125,0,0" VerticalAlignment="Top"                                />
+        <HyperlinkButton x:ConnectionId='5' Content="Module 05 Lab" HorizontalAlignment="Left" Margin="25,150,0,0" VerticalAlignment="Top"                                />
+
+
+    </Grid>
+</Page>
+
